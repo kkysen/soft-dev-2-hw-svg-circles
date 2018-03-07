@@ -52,10 +52,12 @@ const addCircleAt = function(x, y) {
         fill: COLOR_1,
         stroke: COLOR_1,
     });
+    
     let numClicks = 0;
     circle.addEventListener("click", function(e) {
         e.preventDefault();
         e.stopPropagation();
+        
         numClicks++;
         if (numClicks === 1) {
             circle.setAttributes({
